@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ListView para mostrar los platillos -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Vista para mostrar los detalles del platillo seleccionado -->
+    <!-- Como se hizo en el ejercicio anterior unicamente separamos las dos vistas -->
+    <!-- En la primera se muestra solamente el listado y en la segunda la imagen con el nobre y boton -->
+    <LinearLayout
+        android:id="@+id/platilloDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+    android:gravity="center"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewPlatillo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvNombrePlatillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombreP"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Botón para regresar al ListView -->
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boton1"
+        android:layout_marginTop="16dp" />
+        <!-- Botón para compartir-->
+        <Button
+            android:id="@+id/btnCompartir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton2"
+            android:layout_marginTop="16dp" />
+
+</LinearLayout>
+    </LinearLayout>
